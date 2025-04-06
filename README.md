@@ -1,4 +1,8 @@
-# desafio-santander
+![Logo](build/santander.png)
+ # desafio-santander
+
+### URL do Site
+https://gabriela-dantas.github.io/desafio-santander/
 
 ### SonarQube
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=gabriela-dantas_desafio-santander&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=gabriela-dantas_desafio-santander)
