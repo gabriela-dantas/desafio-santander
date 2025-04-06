@@ -80,6 +80,6 @@ jobs:
 
       - name: Publicar no GitHub Pages
         uses: actions/deploy-pages@v4
-
-       - name: Print URL do GitHub Pages
+        
+      - name: Print URL do GitHub Pages
         run: echo "Site publicado em https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/"
