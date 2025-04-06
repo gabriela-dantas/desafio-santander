@@ -62,7 +62,7 @@ https://gabriela-dantas.github.io/desafio-santander/
 
 Se o texto "Hello World." existir na tela renderizada pelo App, o teste passa ✅
 Se não existir, o teste falha ❌
-<br><br>
+<br><br><br>
 
 
 ![Logo](build/santander.png)
