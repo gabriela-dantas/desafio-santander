@@ -86,10 +86,10 @@ jobs:
 
   # Notificar falahas no email     
   notify:
-    name: Notify Failure
+    name: Notificação de falha
     if: ${{ failure() }}
     runs-on: ubuntu-latest
-    needs: [sonarqube,build, deploy]
+    needs: [sonarqube, build, deploy]
     steps:
       - name: Enviar e-mail em caso de falha
         uses: dawidd6/action-send-mail@v4
@@ -105,4 +105,4 @@ jobs:
             Autor: ${{ github.actor }}
             Veja mais detalhes: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
           to: ${{ secrets.EMAIL_DEV }}
-          from: ${{ secrets.EMAIL_USERNAME }}
+          from: ${{ secrets.EMAIL_GIT }}
