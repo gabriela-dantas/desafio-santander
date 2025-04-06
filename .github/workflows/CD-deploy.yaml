@@ -1,0 +1,64 @@
+name: Deploy Page React Hello World
+
+on:
+  push:
+    branches: [ "main" ]
+  # Permitindo que o workflow execute manualmente pela aba "Actions" do GitHub.  
+  workflow_dispatch:
+
+# Definindo quais permissões esse workflow tem quando ele roda com o GITHUB_TOKEN
+permissions:
+  contents: 'read'
+  id-token: 'write'
+  pages: 'write'
+
+
+jobs:
+  sonarqube:
+    name: Análise com SonarQube
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Clones superficiais devem ser desativados para uma melhor relevância da análise
+
+      - name: Executar SonarQube
+        uses: SonarSource/sonarqube-scan-action@v5
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+
+  build-and-deploy:
+    name: Build, Teste e Release
+    needs: sonarqube
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18.x'
+          cache: 'npm'
+
+      - name: Instalar dependências
+        run: npm ci
+
+      - name: Build da aplicação
+        run: npm run build
+
+      - name: Executar testes
+        run: npm run test
+
+      - name: Criar Release no GitHub
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: v1.0.${{ github.run_number }}
+          name: "Release v1.0.${{ github.run_number }}"
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
