@@ -17,6 +17,13 @@ https://gabriela-dantas.github.io/desafio-santander/
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=gabriela-dantas_desafio-santander&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=gabriela-dantas_desafio-santander)<br><br>
 
 
+### Projeto
+![Logo](img-readme/solucao.png)<br><br><br>
+
+
+### Notificações
+Além da notificação enviada diretamente pelo GitHub, adicionei um step na pipeline para envio de e-mails apenas em caso de erros.
+![Logo](img-readme/notificacao.png)<br><br><br>
 
 ### Explicando o teste unitário que se encontra no diretório src/App.test.js
 
@@ -65,4 +72,4 @@ Se não existir, o teste falha ❌
 <br><br><br>
 
 
-![Logo](build/santander.png)
+![Logo](img-readme/santander.png)
