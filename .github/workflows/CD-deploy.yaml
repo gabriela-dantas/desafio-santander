@@ -85,7 +85,8 @@ jobs:
         run: echo "Site publicado em https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/"
 
   # Notificar falahas no email     
-  notify_failure:
+  notify:
+    name: Notify Failure
     if: ${{ failure() }}
     runs-on: ubuntu-latest
     needs: [sonarqube,build, deploy]
