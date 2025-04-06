@@ -1,4 +1,4 @@
-![Logo](build/santander.png)
+![Logo](build/logo-santander.png)
  # desafio-santander
 
 ### URL do Site
