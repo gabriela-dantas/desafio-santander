@@ -105,4 +105,4 @@ jobs:
             Autor: ${{ github.actor }}
             Veja mais detalhes: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
           to: ${{ secrets.EMAIL_DEV }}
-          #from: notifications@github.com
+          from: ${{ secrets.EMAIL_USERNAME }}
