@@ -1,8 +1,17 @@
 # desafio-santander
 
-## SonarQube
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=gabriela-dantas_desafio-santander&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=gabriela-dantas_desafio-santander)<br><br>
-[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=gabriela-dantas_desafio-santander&metric=bugs)](https://sonarcloud.io/summary/new_code?id=gabriela-dantas_desafio-santander)<br>
+### SonarQube
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=gabriela-dantas_desafio-santander&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=gabriela-dantas_desafio-santander)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=gabriela-dantas_desafio-santander&metric=bugs)](https://sonarcloud.io/summary/new_code?id=gabriela-dantas_desafio-santander)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=gabriela-dantas_desafio-santander&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=gabriela-dantas_desafio-santander)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=gabriela-dantas_desafio-santander&metric=coverage)](https://sonarcloud.io/summary/new_code?id=gabriela-dantas_desafio-santander)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=gabriela-dantas_desafio-santander&metric=coverage)](https://sonarcloud.io/summary/new_code?id=gabriela-dantas_desafio-santander)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=gabriela-dantas_desafio-santander&metric=coverage)](https://sonarcloud.io/summary/new_code?id=gabriela-dantas_desafio-santander)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=gabriela-dantas_desafio-santander&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=gabriela-dantas_desafio-santander)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=gabriela-dantas_desafio-santander&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=gabriela-dantas_desafio-santander)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=gabriela-dantas_desafio-santander&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=gabriela-dantas_desafio-santander)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=gabriela-dantas_desafio-santander&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=gabriela-dantas_desafio-santander)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=gabriela-dantas_desafio-santander&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=gabriela-dantas_desafio-santander)<br><br>
 
 
 
