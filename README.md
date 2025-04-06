@@ -22,7 +22,7 @@ https://gabriela-dantas.github.io/desafio-santander/
 
 
 ### Notificações
-Além da notificação enviada diretamente pelo GitHub, adicionei um step na pipeline para envio de e-mails apenas em caso de erros.
+Além da notificação enviada diretamente pelo GitHub, adicionei um step na pipeline para envio de e-mails apenas em caso de erros:
 ![Logo](img-readme/notificacao.png)<br><br><br>
 
 ### Explicando o teste unitário que se encontra no diretório src/App.test.js
@@ -69,7 +69,7 @@ Além da notificação enviada diretamente pelo GitHub, adicionei um step na pip
 
 Se o texto "Hello World." existir na tela renderizada pelo App, o teste passa ✅
 Se não existir, o teste falha ❌
-<br><br><br>
+<br><br><br><br><br>
 
 
 ![Logo](img-readme/santander.png)
