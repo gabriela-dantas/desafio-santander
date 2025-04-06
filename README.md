@@ -1,17 +1,8 @@
 # desafio-santander
 
 ## SonarQube
-https://sonarcloud.io/api/project_badges/measure?project=gabriela-dantas_desafio-santander&metric=alert_status<br><br>
-https://sonarcloud.io/api/project_badges/measure?project=gabriela-dantas_desafio-santander&metric=bugs <br>
-https://sonarcloud.io/api/project_badges/measure?project=gabriela-dantas_desafio-santander&metric=code_smells <br>
-https://sonarcloud.io/api/project_badges/measure?project=gabriela-dantas_desafio-santander&metric=coverage <br>
-https://sonarcloud.io/api/project_badges/measure?project=gabriela-dantas_desafio-santander&metric=duplicated_lines_density<br><br>
-https://sonarcloud.io/api/project_badges/measure?project=gabriela-dantas_desafio-santander&metric=duplicated_lines_density<br>
-https://sonarcloud.io/api/project_badges/measure?project=gabriela-dantas_desafio-santander&metric=duplicated_lines_density<br>
-https://sonarcloud.io/api/project_badges/measure?project=gabriela-dantas_desafio-santander&metric=security_rating<br>
-https://sonarcloud.io/api/project_badges/measure?project=gabriela-dantas_desafio-santander&metric=security_rating<br>
-https://sonarcloud.io/api/project_badges/measure?project=gabriela-dantas_desafio-santander&metric=security_rating<br>
-https://sonarcloud.io/api/project_badges/measure?project=gabriela-dantas_desafio-santander&metric=security_rating<br><br>
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=gabriela-dantas_desafio-santander&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=gabriela-dantas_desafio-santander)<br><br>
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=gabriela-dantas_desafio-santander&metric=bugs)](https://sonarcloud.io/summary/new_code?id=gabriela-dantas_desafio-santander)<br>
 
 
 
