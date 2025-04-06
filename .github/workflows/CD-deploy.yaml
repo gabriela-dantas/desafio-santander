@@ -3,15 +3,14 @@ name: Deploy Page React Hello World
 on:
   push:
     branches: [ "main" ]
-  # Permitindo que o workflow execute manualmente pela aba "Actions" do GitHub.  
+  # Permitindo que o workflow execute manualmente pela aba "Actions" do GitHub.
   workflow_dispatch:
 
-# Definindo quais permissões esse workflow tem quando ele roda com o GITHUB_TOKEN
+# Definindo quais permissões esse workflow tem quando ele roda com o GITHUB_TOKEN   
 permissions:
   contents: 'write'
   id-token: 'write'
   pages: 'write'
-
 
 jobs:
   sonarqube:
@@ -21,17 +20,20 @@ jobs:
       - name: Checkout do código
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Clones superficiais devem ser desativados para uma melhor relevância da análise
+          fetch-depth: 0  # Clones superficiais devem ser desativados para uma melhor relevância da análise
 
       - name: Executar SonarQube
         uses: SonarSource/sonarqube-scan-action@v5
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
-  build-and-deploy:
+  build:
     name: Build, Teste e Release
     needs: sonarqube
     runs-on: ubuntu-latest
+
+    outputs:
+      build-path: ${{ steps.build.outputs.path }}
 
     steps:
       - name: Checkout do código
@@ -62,10 +64,10 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-       - name: Upload build para o GitHub Pages
-          uses: actions/upload-pages-artifact@v3
-          with:
-            path: ./build
+      - name: Upload build para o GitHub Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./build
 
   deploy:
     name: Deploy para GitHub Pages
@@ -79,6 +81,5 @@ jobs:
       - name: Publicar no GitHub Pages
         uses: actions/deploy-pages@v4
 
-      - name: Print URL do GitHub Pages
+       - name: Print URL do GitHub Pages
         run: echo "Site publicado em https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/"
-
